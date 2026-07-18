@@ -173,6 +173,7 @@
   /* ---------- Programs ---------- */
   .prog-grid{display:grid;gap:22px;grid-template-columns:1fr}
   @media(min-width:640px){.prog-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:980px){.prog-grid{grid-template-columns:repeat(3,1fr)}}
   .prog{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:4/5;border:1px solid var(--border);group:card}
   .prog img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
   .prog::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,8,9,.94) 4%,rgba(8,8,9,.35) 46%,rgba(8,8,9,.12) 100%);transition:background .4s}
@@ -377,8 +378,8 @@
   <!-- MARQUEE -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>Strength<i class="dot"></i>Cardio<i class="dot"></i>HIIT<i class="dot"></i>CrossFit<i class="dot"></i>Personal Training<i class="dot"></i>Functional<i class="dot"></i>Yoga<i class="dot"></i>Zumba<i class="dot"></i></span>
-      <span>Strength<i class="dot"></i>Cardio<i class="dot"></i>HIIT<i class="dot"></i>CrossFit<i class="dot"></i>Personal Training<i class="dot"></i>Functional<i class="dot"></i>Yoga<i class="dot"></i>Zumba<i class="dot"></i></span>
+      <span>Strength<i class="dot"></i>Cardio<i class="dot"></i>HIIT<i class="dot"></i>CrossFit<i class="dot"></i>Personal Training<i class="dot"></i>Functional<i class="dot"></i>Yoga<i class="dot"></i>Zumba<i class="dot"></i>Aerobics<i class="dot"></i></span>
+      <span>Strength<i class="dot"></i>Cardio<i class="dot"></i>HIIT<i class="dot"></i>CrossFit<i class="dot"></i>Personal Training<i class="dot"></i>Functional<i class="dot"></i>Yoga<i class="dot"></i>Zumba<i class="dot"></i>Aerobics<i class="dot"></i></span>
     </div>
   </div>
 
@@ -467,6 +468,24 @@
             <div class="n">04 — MOVE</div>
             <h3>Functional Fitness</h3>
             <p>Sleds, turf &amp; bodyweight training to build athletic, real-world strength and mobility.</p>
+            <span class="go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </article>
+        <article class="prog reveal">
+          <img src="assets/program-zumba.svg" alt="Zumba dance fitness class at Inshape Fitness" loading="lazy" />
+          <div class="prog-body">
+            <div class="n">05 — DANCE</div>
+            <h3>Zumba</h3>
+            <p>High-energy dance workouts to Latin &amp; Bollywood beats — cardio that feels like a party.</p>
+            <span class="go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </article>
+        <article class="prog reveal d1">
+          <img src="assets/program-aerobics.svg" alt="Group aerobics class at Inshape Fitness" loading="lazy" />
+          <div class="prog-body">
+            <div class="n">06 — PULSE</div>
+            <h3>Aerobics</h3>
+            <p>Rhythmic, full-body conditioning to boost stamina, heart health &amp; flexibility — all levels welcome.</p>
             <span class="go">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </div>
         </article>
