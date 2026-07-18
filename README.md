@@ -32,7 +32,8 @@ inshape-fitness/
     ├── program-zumba.svg
     ├── program-aerobics.svg
     ├── cta-banner.svg
-    └── trainer-gaurav.svg
+    ├── trainer-gaurav.svg
+    └── trainer-anirudh.svg
 ```
 
 > Images are stored as individual optimized files (SVG-wrapped JPEGs) so they render natively in browsers and on GitHub Pages. The only external dependency is the Google Maps embed in the Location section.
@@ -71,7 +72,6 @@ python3 -m http.server 8000
 - 📍 Exact street address + PIN code
 - ✉️ Email address and social media links
 - 🕒 Exact opening hours (current times are assumed)
-- 📸 A real photo of **Anirudh Singh** (his card uses an initials placeholder for now)
 
 ---
 
