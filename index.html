@@ -307,6 +307,45 @@
   .foot-col a:hover{color:var(--accent)}
   .foot-bottom{margin-top:52px;padding-top:24px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:var(--muted-2);font-size:.84rem}
 
+  /* ---------- How It Works ---------- */
+  .steps{display:grid;gap:22px;grid-template-columns:1fr}
+  @media(min-width:620px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:980px){.steps{grid-template-columns:repeat(4,1fr)}}
+  .step{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:32px 26px;transition:transform .4s var(--ease),border-color .4s}
+  .step:hover{transform:translateY(-6px);border-color:var(--accent)}
+  .step-n{font-family:'Anton',sans-serif;font-size:3.2rem;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--accent);display:block;margin-bottom:14px}
+  .step h3{font-size:1.3rem;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:.93rem;line-height:1.55}
+
+  /* ---------- Testimonials tweaks ---------- */
+  .test{margin:0}
+  .test .who .nm{display:block}
+  .test .who .mt{display:block}
+
+  /* ---------- FAQ ---------- */
+  .faq{display:grid;gap:14px}
+  .faq details{background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+  .faq summary{list-style:none;cursor:pointer;padding:20px 24px;font-family:'Oswald',sans-serif;font-weight:600;font-size:1.05rem;letter-spacing:.02em;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:color .25s}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .fic{position:relative;flex:none;width:18px;height:18px}
+  .faq summary .fic::before,.faq summary .fic::after{content:"";position:absolute;background:var(--accent);border-radius:2px;transition:transform .3s var(--ease)}
+  .faq summary .fic::before{left:0;top:8px;width:18px;height:2px}
+  .faq summary .fic::after{left:8px;top:0;width:2px;height:18px}
+  .faq details[open] summary{color:var(--accent)}
+  .faq details[open] summary .fic::after{transform:scaleY(0)}
+  .faq details>p{padding:0 24px 22px;color:var(--muted);font-size:.96rem;line-height:1.65;margin:0}
+
+  /* ---------- Lead form ---------- */
+  .lead-form{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:30px}
+  .lead-form h3{font-size:1.5rem;margin-bottom:6px}
+  .lead-form .lf-sub{color:var(--muted);font-size:.92rem;margin-bottom:20px}
+  .lead-form label{display:block;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;color:var(--muted);margin-bottom:14px}
+  .lead-form .lf-row{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+  .lead-form input,.lead-form select,.lead-form textarea{width:100%;margin-top:7px;background:var(--bg-2);border:1px solid var(--border);border-radius:6px;padding:12px 14px;color:var(--text);font-family:'Inter',sans-serif;font-size:.95rem;letter-spacing:normal;text-transform:none}
+  .lead-form input:focus,.lead-form select:focus,.lead-form textarea:focus{outline:none;border-color:var(--accent)}
+  .lead-form textarea{resize:vertical}
+  .lead-form .lf-note{margin-top:14px;font-size:.86rem;color:var(--accent);min-height:1.1em;text-transform:none;letter-spacing:normal;font-family:'Inter',sans-serif}
+
   .reveal{opacity:0;transform:translateY(34px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
   .reveal.in{opacity:1;transform:none}
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
@@ -579,6 +618,23 @@
     </div>
   </section>
 
+  <!-- HOW IT WORKS -->
+  <section class="sec" id="how" style="background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="kicker">Getting Started</span>
+        <h2 class="display">Your First Week, Sorted</h2>
+        <p class="lead" style="margin:0 auto">Starting is the hardest part — so we made it simple. Here's exactly how you go from curious to confident.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="step-n">01</span><h3>Book a Free Trial</h3><p>Walk in or message us and reserve a no-obligation trial session at a time that suits you.</p></div>
+        <div class="step reveal d1"><span class="step-n">02</span><h3>Meet Your Coach</h3><p>Sit down with a certified trainer to talk goals, current fitness level and any concerns.</p></div>
+        <div class="step reveal d2"><span class="step-n">03</span><h3>Train With Guidance</h3><p>Follow a plan built around you — every movement coached with proper, safe form.</p></div>
+        <div class="step reveal d3"><span class="step-n">04</span><h3>Track &amp; Grow</h3><p>Stay consistent, review your progress every month, and get visibly stronger week on week.</p></div>
+      </div>
+    </div>
+  </section>
+
   <!-- MEMBERSHIP -->
   <section class="sec" id="membership" style="background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
     <div class="wrap">
@@ -635,6 +691,37 @@
     </div>
   </section>
 
+  <!-- TESTIMONIALS -->
+  <section class="sec" id="reviews">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="kicker">Member Stories</span>
+        <h2 class="display">Loved By Bharatpur</h2>
+        <p class="lead" style="margin:0 auto">Real people, real progress. Here's what our members say about training at Inshape.</p>
+      </div>
+      <div class="test-grid">
+        <figure class="test reveal">
+          <div class="q">“</div>
+          <div class="stars">★★★★★</div>
+          <p>Joining Inshape was the best decision I made this year. The trainers actually watch your form and push you the right amount — I've never felt stronger or more confident.</p>
+          <figcaption class="who"><span class="av">R</span><span><span class="nm">Rahul Verma</span><span class="mt">Member · 8 months</span></span></figcaption>
+        </figure>
+        <figure class="test reveal d1">
+          <div class="q">“</div>
+          <div class="stars">★★★★★</div>
+          <p>Clean, spacious and full of positive energy. The group classes are so much fun that I actually look forward to my workouts now. Easily the best gym in Bharatpur.</p>
+          <figcaption class="who"><span class="av">P</span><span><span class="nm">Pooja Sharma</span><span class="mt">Member · 1 year</span></span></figcaption>
+        </figure>
+        <figure class="test reveal d2">
+          <div class="q">“</div>
+          <div class="stars">★★★★★</div>
+          <p>I walked in as a total beginner and never felt judged. The personal training and diet guidance helped me drop 9 kg in four months. Genuinely life-changing.</p>
+          <figcaption class="who"><span class="av">A</span><span><span class="nm">Amit Meena</span><span class="mt">Member · 6 months</span></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA BAND -->
   <section class="ctaband">
     <div class="ctaband-bg">
@@ -656,6 +743,24 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="sec" id="faq" style="background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="wrap" style="max-width:900px">
+      <div class="sec-head center reveal">
+        <span class="kicker">Good To Know</span>
+        <h2 class="display">Frequently Asked</h2>
+      </div>
+      <div class="faq reveal">
+        <details open><summary>Do you offer a free trial?<span class="fic"></span></summary><p>Yes — your first session is on us. Walk in during opening hours or book ahead using the form below, and a coach will show you around.</p></details>
+        <details><summary>Do I need any experience to join?<span class="fic"></span></summary><p>Not at all. Inshape is beginner-friendly — our certified trainers guide every movement with proper form so you feel confident from day one.</p></details>
+        <details><summary>What are your timings?<span class="fic"></span></summary><p>We're open Monday to Saturday, 5:30 AM – 10:00 PM, with a dedicated ladies' batch from 12:00–3:00 PM, and Sunday mornings 6:00–11:00 AM.</p></details>
+        <details><summary>Do you provide diet plans and personal training?<span class="fic"></span></summary><p>Yes. Custom diet plans come with our Pro and Elite memberships, and one-on-one personal training is available as part of Elite or as an add-on.</p></details>
+        <details><summary>Can I freeze or pause my membership?<span class="fic"></span></summary><p>Annual (Elite) members can freeze their membership when travelling or unwell — just let the front desk know in advance.</p></details>
+        <details><summary>Is parking available?<span class="fic"></span></summary><p>Yes, we offer free parking, and the whole facility is air-conditioned with clean changing rooms and showers.</p></details>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT / LOCATION -->
   <section class="sec" id="contact">
     <div class="wrap">
@@ -665,7 +770,30 @@
         <p class="lead">Drop by the studio in Bharatpur, or reach out — we'll help you pick the right plan and get started.</p>
       </div>
       <div class="contact-grid">
-        <div class="info-card reveal">
+        <form class="lead-form reveal" id="trialForm">
+          <h3>Book Your Free Trial</h3>
+          <p class="lf-sub">Leave your details and our team will reach out to lock in your session — no obligation.</p>
+          <div class="lf-row">
+            <label>Name<input type="text" name="name" required placeholder="Your name" /></label>
+            <label>Phone<input type="tel" name="phone" required placeholder="+91 …" /></label>
+          </div>
+          <label>Email<input type="email" name="email" placeholder="you@email.com" /></label>
+          <label>Your Goal
+            <select name="goal">
+              <option>Weight loss</option>
+              <option>Muscle gain / strength</option>
+              <option>General fitness</option>
+              <option>Zumba / Aerobics</option>
+              <option>Personal training</option>
+            </select>
+          </label>
+          <label>Message<textarea name="msg" rows="3" placeholder="Anything we should know?"></textarea></label>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Get My Free Trial
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="lf-note" id="lfNote"></p>
+        </form>
+        <div class="info-card reveal d1">
           <div class="infoline">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.3-7-11a7 7 0 1114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
             <div><div class="lb">Address</div><div class="vl">Inshape Fitness<span>Near [landmark], Bharatpur, Rajasthan 321001</span></div></div>
@@ -687,9 +815,9 @@
             </div>
           </div>
         </div>
-        <div class="map-wrap reveal d1">
-          <iframe src="https://www.google.com/maps?q=27.0630827,77.2864879&hl=en&z=14&output=embed" title="Inshape Fitness location map — Bharatpur" loading="lazy"></iframe>
-        </div>
+      </div>
+      <div class="map-wrap reveal" style="margin-top:24px">
+        <iframe src="https://www.google.com/maps?q=27.0630827,77.2864879&hl=en&z=14&output=embed" title="Inshape Fitness location map — Bharatpur" loading="lazy"></iframe>
       </div>
     </div>
   </section>
@@ -778,6 +906,22 @@
     entries.forEach(e => { if (e.isIntersecting){ animate(e.target.querySelector('.num')); cio.unobserve(e.target); } });
   }, {threshold:0.5});
   document.querySelectorAll('.stat').forEach(el => cio.observe(el));
+
+  // Free-trial form -> compose an email (works with no backend)
+  var tf=document.getElementById('trialForm');
+  if(tf){tf.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(tf);
+    var body="New free-trial enquiry:%0D%0A%0D%0A"
+      +"Name: "+encodeURIComponent(f.get('name')||'')+"%0D%0A"
+      +"Phone: "+encodeURIComponent(f.get('phone')||'')+"%0D%0A"
+      +"Email: "+encodeURIComponent(f.get('email')||'')+"%0D%0A"
+      +"Goal: "+encodeURIComponent(f.get('goal')||'')+"%0D%0A"
+      +"Message: "+encodeURIComponent(f.get('msg')||'');
+    window.location.href="mailto:hello@inshapefitness.in?subject="
+      +encodeURIComponent("Free Trial Request — "+(f.get('name')||''))+"&body="+body;
+    document.getElementById('lfNote').textContent="Opening your email app to send the request…";
+  });}
 
   // Year
   document.getElementById('year').textContent = new Date().getFullYear();
