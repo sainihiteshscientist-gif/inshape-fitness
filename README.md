@@ -6,12 +6,12 @@ A world-class, responsive landing page for **Inshape Fitness**, a premium streng
 
 ## ✨ Features
 
-- Full-screen cinematic hero with real gym photography
+- Cinematic hero with real gym photography, Ken Burns motion & scroll progress bar
 - Sticky navigation + mobile slide-in menu
 - Animated stat counters and scroll-reveal animations
-- Sections: About, Programs, "Step Inside" photo gallery, Trainers, Membership pricing (₹ INR), Facilities, CTA, Location + map, Contact
-- High-energy premium aesthetic — bold display type, dark theme, orange accent
-- Lightweight `index.html` (HTML + CSS + vanilla JS, no build step) with all images stored as separate files in `assets/`
+- Sections: About, **Programs** (Strength, Group HIIT & Cardio, Personal Training, Functional, **Zumba**, **Aerobics**), "Step Inside" photo gallery, **How It Works**, **Trainers**, **Membership pricing** (₹ INR), Facilities, **Testimonials**, **FAQ**, CTA, and a **Book-a-Free-Trial enquiry form** + location map
+- High-energy premium aesthetic — bold display type, dark theme, orange→ember gradient accents, filmic grain
+- Lightweight `index.html` (HTML + CSS + vanilla JS, no build step); every image is a separate file in `assets/`
 
 ## 📁 Structure
 
@@ -29,17 +29,31 @@ inshape-fitness/
     ├── program-hiit.svg
     ├── program-pt.svg
     ├── program-functional.svg
+    ├── program-zumba.svg
+    ├── program-aerobics.svg
     ├── cta-banner.svg
-    ├── trainer-1.svg
-    ├── trainer-2.svg
-    └── trainer-3.svg
+    └── trainer-gaurav.svg
 ```
 
-> **Note on the image files:** each photo is stored as an individual, optimized image file in `assets/` (SVG-wrapped so it renders natively in the browser and on GitHub Pages). `index.html` references them with relative `assets/…` paths, so the site is fully self-contained — no external dependencies except the Google Maps embed in the Location section.
+> Images are stored as individual optimized files (SVG-wrapped JPEGs) so they render natively in browsers and on GitHub Pages. The only external dependency is the Google Maps embed in the Location section.
+
+## 💳 Membership (current rate card)
+
+| Duration | Men | Women | Couple (M+F) |
+|---|---|---|---|
+| 1 Month | ₹2,000 | ₹1,500 | ₹3,500 |
+| 3 Months | ₹5,000 | ₹3,600 | ₹8,500 |
+| 6 Months | ₹8,500 | ₹6,000 | — |
+| 12 Months | ₹13,000 | — | — |
+
+Personal Training — ₹5,000/month · Day Pass — ₹200/day
+
+## 👥 Team
+
+- **Gaurav Saini** — Co-Founder · Trainer — 📞 76650 30635
+- **Anirudh Singh** — Co-Founder · Trainer — 📞 85600 93466
 
 ## 🚀 Run locally
-
-Open `index.html` in your browser, or serve it:
 
 ```bash
 python3 -m http.server 8000
@@ -48,18 +62,16 @@ python3 -m http.server 8000
 
 ## 🌐 Deploy with GitHub Pages (free)
 
-1. Go to **Settings → Pages**
-2. Under **Source**, choose the `main` branch and `/ (root)` folder, then **Save**
-3. Your site goes live at:
-   `https://sainihiteshscientist-gif.github.io/inshape-fitness/`
+1. **Settings → Pages**
+2. **Source:** `main` branch, `/ (root)`, then **Save**
+3. Live at: `https://sainihiteshscientist-gif.github.io/inshape-fitness/`
 
-## 🖊️ Before going live — customize these placeholders
+## 🖊️ Still to add (currently placeholders)
 
-- 📞 Phone / WhatsApp number
-- 📍 Exact address + PIN code
-- ✉️ Email and social media links
-- 💳 Membership prices
-- 🕒 Opening hours, trainer names, and the headline stats
+- 📍 Exact street address + PIN code
+- ✉️ Email address and social media links
+- 🕒 Exact opening hours (current times are assumed)
+- 📸 A real photo of **Anirudh Singh** (his card uses an initials placeholder for now)
 
 ---
 
